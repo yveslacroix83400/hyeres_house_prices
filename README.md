@@ -32,4 +32,4 @@ Pour visualiser les cartes sur votre ordinateur sans passer par GitHub Pages :
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/yveslacroix83400/<NOM-DU-REPO>.git
+   git clone https://github.com/yveslacroix83400/hyeres_house_prices.git
