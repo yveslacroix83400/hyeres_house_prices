@@ -1,20 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Housing Price Maps</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Observatoire Immobilier — Hyères (83400)</title>
   <style>
-    body { font-family: sans-serif; padding: 40px; line-height: 1.6; }
-    ul { list-style-type: none; padding: 0; }
-    li { margin: 10px 0; }
-    a { color: #0969da; text-decoration: none; font-size: 1.1rem; }
-    a:hover { text-decoration: underline; }
+    :root {
+      --primary: #1e3a8a;
+      --primary-hover: #172554;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: #e0f2fe;
+      color: #0369a1;
+      margin-bottom: 12px;
+      align-self: flex-start;
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .btn {
+      display: inline-block;
+      text-align: center;
+      background-color: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .btn-secondary {
+      background-color: #f1f5f9;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background-color: #e2e8f0;
+    }
+
+    .data-section {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .data-section h3 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .data-section p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 14px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
   </style>
 </head>
 <body>
-  <h1>Housing Price Maps</h1>
-  <ul>
-    <li><a href="map1.html">Map 1: City Overview</a></li>
-    <li><a href="map2.html">Map 2: Price per Square Foot</a></li>
-  </ul>
+
+  <div class="container">
+    <header>
+      <h1>Observatoire Immobilier — Hyères (83400)</h1>
+      <p>Cartographies interactives des ventes de maisons (2021 – 2026)</p>
+    </header>
+
+    <div class="grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <div>
+          <span class="card-badge">Analyse Spatiale</span>
+          <h2>Clusters Immobiliers</h2>
+          <p>Visualisation des regroupements géographiques et de la densité des transactions sur la commune de Hyères.</p>
+        </div>
+        <a href="hyeres_clusters_carto.html" class="btn">Ouvrir la carte des clusters →</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div>
+          <span class="card-badge">Tarifs & Surfaces</span>
+          <h2>Prix au m² & Surface</h2>
+          <p>Distribution spatiale des prix au mètre carré et analyse conjointe des surfaces habitables des maisons vendues.</p>
+        </div>
+        <a href="hyeres_prix_m2_surface_carto.html" class="btn">Ouvrir la carte prix/m² →</a>
+      </div>
+    </div>
+
+    <!-- Data section -->
+    <div class="data-section">
+      <h3>Jeu de données source</h3>
+      <p>Données nettoyées et préparées pour la modélisation (2021 - 2026).</p>
+      <a href="hyeres_maisons_2021_2026_model_ready.csv" download class="btn btn-secondary">
+        ⬇ Télécharger le CSV (Données brutes)
+      </a>
+    </div>
+
+    <footer>
+      <p>Propulsé par GitHub Pages &bull; Données immobilières Hyères</p>
+    </footer>
+  </div>
+
 </body>
 </html>
