@@ -8,11 +8,10 @@ Visualisations cartographiques interactives et données sur les ventes de maison
 
 Les cartes sont hébergées et consultables directement via GitHub Pages :
 
-* 🌐 **[Page d'accueil & Portail](https://yveslacroix83400.github.io/<NOM-DU-REPO>/)**
-* 📍 **[Carte des Clusters](https://yveslacroix83400.github.io/<NOM-DU-REPO>/hyeres_clusters_carto.html)** : Analyse par regroupement et densité géographique des ventes.
-* 💶 **[Carte Prix/m² & Surfaces](https://yveslacroix83400.github.io/<NOM-DU-REPO>/hyeres_prix_m2_surface_carto.html)** : Répartition spatiale des valeurs foncières au m² et surfaces habitables.
+* 🌐 **[Page d'accueil & Portail](https://yveslacroix83400.github.io/hyeres_house_prices/)**
+* 📍 **[Carte des Clusters](https://yveslacroix83400.github.io/hyeres_house_prices/hyeres_clusters_carto.html)** : Analyse par regroupement et densité géographique des ventes.
+* 💶 **[Carte Prix/m² & Surfaces](https://yveslacroix83400.github.io/hyeres_house_prices/hyeres_prix_m2_surface_carto.html)** : Répartition spatiale des valeurs foncières au m² et surfaces habitables.
 
-*(Remplacez `<NOM-DU-REPO>` par le nom exact de votre dépôt GitHub).*
 
 ---
 
