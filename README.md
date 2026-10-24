@@ -10,8 +10,8 @@ Les cartes sont hébergées et consultables directement via GitHub Pages :
 
 * 🌐 **[Page d'accueil & Portail](https://yveslacroix83400.github.io/hyeres_house_prices/)**
 * 📍 **[Carte des Clusters](https://yveslacroix83400.github.io/hyeres_house_prices/hyeres_clusters_carto.html)** : Analyse par regroupement et densité géographique des ventes.
-* 💶 **[Carte Prix/m² & Surfaces](https://yveslacroix83400.github.io/hyeres_house_prices/hyeres_prix_m2_surface_carto.html)** : Répartition spatiale des valeurs foncières au m² et surfaces habitables.
-
+* 💶 **[Carte Prix/m² & Surfaces](https://yveslacroix83400.github.io/hyeres_house_prices/hyeres_prix_m2_surface_carto.html)** : Répartition spatiale des valeurs foncières au m² par grille de carroyage.
+* 📅 **[Carte par Année & Prix/m²](https://yveslacroix83400.github.io/hyeres_house_prices/hyeres_annees_prix_m2_carto.html)** : Évolution des ventes (2021-2026) avec couleur par millésime, bulles proportionnelles au prix au m² et détails au survol.
 
 ---
 
@@ -22,6 +22,7 @@ Les cartes sont hébergées et consultables directement via GitHub Pages :
 | **`index.html`** | Portail d'accueil liant l'ensemble des cartes et données. |
 | **`hyeres_clusters_carto.html`** | Carte interactive des clusters de transactions. |
 | **`hyeres_prix_m2_surface_carto.html`** | Carte interactive des prix au m² selon la surface. |
+| **`hyeres_annees_prix_m2_carto.html`** | Carte interactive avec code couleur par année et disques proportionnels. |
 | **`hyeres_maisons_2021_2026_model_ready.csv`** | Données nettoyées prêtes pour l'analyse / Machine Learning. |
 
 ---
